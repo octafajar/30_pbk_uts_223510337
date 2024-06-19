@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+<<<<<<< HEAD
 
 import Todos from '../views/Todos.vue';
 import Post from '../views/Post.vue';
@@ -26,6 +27,16 @@ const routes = [
     name: 'Photos',
     component: Photos,
   },
+=======
+import ActivityList from '../components/ActivityList.vue';
+import Post from '../components/Post.vue';
+import Todos from '../components/Todos.vue';
+
+const routes = [
+  { path: '/', component: ActivityList },
+  { path: '/post', component: Post },
+  { path: '/todos', component: Todos },
+>>>>>>> ad865bc29a8a642256fc5eaa12fd29a254d131f6
 ];
 
 const router = createRouter({
